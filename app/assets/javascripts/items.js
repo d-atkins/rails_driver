@@ -2,10 +2,12 @@ function itemCard(item) {
   let name = item.attributes.name
   let description = item.attributes.description
   let unit_price = item.attributes.unit_price
+  let merchant_name = item.attributes.merchant_name
   let card = `
     <div class="card">
       <div class="card-body">
         <h3 class="card-title"><a href='/items/${item.id}'>${name}</a></h3>
+        <p>Merchant: ${merchant_name}</p>
         <p>Price: ${unit_price}</p>
         <p class="card-text">${description}</p>
       </div>

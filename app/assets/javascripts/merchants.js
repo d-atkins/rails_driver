@@ -22,6 +22,7 @@ function merchantAdminHeader(merchant) {
       <a href='/admin/merchants/${merchant.id}'>${name}</a>
 
     </h1>
+    <p>Revenue: $${merchant.attributes.revenue.toFixed(2)}</p>
     <a href='/admin/merchants/${merchant.id}/edit'>edit</a>
     <a href='#' id='delete'>delete</a>
   `
